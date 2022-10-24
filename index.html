@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      P {
+        color: red;
+        text-transform: uppercase;
+        font-size: 18px;
+        word-spacing: 5px;
+      }
+
+      table {
+        border: 1px solid;
+      }
+
+      .content-1 {
+        float: left;
+        width: 30%;
+      }
+
+      .content-2 {
+        float: right;
+        width: 30%;
+      }
+
+      .content-3 {
+        float: right;
+        width: 30%;
+      }
+
+      .clearfix::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
+      @media (max-width: 992px) {
+        .content-1 {
+          float: left;
+          width: 50%;
+        }
+
+        .content-2 {
+          float: right;
+          width: 50%;
+        }
+
+        .content-3 {
+          float: left;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>Truong Huy Binh</p>
+    <ul>
+      <li>Trang chu</li>
+      <li>Lien he</li>
+    </ul>
+    <img src="1mKUdDS.jpg" alt="a cat" />
+    <table>
+      <tr>
+        <td>abc</td>
+        <td>abc</td>
+      </tr>
+      <tr>
+        <td>abc</td>
+        <td>abc</td>
+      </tr>
+      <tr>
+        <td>abc</td>
+        <td>abc</td>
+      </tr>
+    </table>
+    <div class="container clearfix">
+      <div class="content-1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          culpa.
+        </p>
+      </div>
+      <div class="content-2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          culpa.
+        </p>
+      </div>
+      <div class="content-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+          culpa.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
